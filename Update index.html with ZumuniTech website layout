@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZumuniTech | Learn Tech the Smart Way</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+    header {
+      background: #1e293b;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 { font-size: 1.5rem; }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover { color: #38bdf8; }
+    section {
+      padding: 4rem 2rem;
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #38bdf8;
+      color: black;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .services ul, .blog ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li, .blog li {
+      background: #1e293b;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1e293b;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ZumuniTech</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#videos">YouTube</a>
+      <a href="#blog">Blog</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Welcome to ZumuniTech</h2>
+    <p>Tech Made Simple – Learn with videos, blogs, and freelance services</p>
+    <a class="btn" href="https://www.youtube.com/@ZumuniTech" target="_blank">Visit YouTube</a>
+  </section>
+
+  <section id="videos">
+    <h2>YouTube Videos</h2>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="blog">
+    <h2>Blog Posts</h2>
+    <ul>
+      <li>
+        <h3>What is the OSI Model?</h3>
+        <p>A beginner's explanation of how data moves through network layers.</p>
+      </li>
+      <li>
+        <h3>How to Install Ubuntu in VirtualBox</h3>
+        <p>Step-by-step guide for setting up a Linux lab on your Windows PC.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="services" class="services">
+    <h2>My Services</h2>
+    <ul>
+      <li>✅ YouTube Script Writing</li>
+      <li>✅ Resume & Cover Letter Writing</li>
+      <li>✅ Tech Blog Post Writing</li>
+    </ul>
+    <a class="btn" href="https://www.fiverr.com/users/zumunitech" target="_blank">Hire Me on Fiverr</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email me at: <a href="mailto:zumunitech@gmail.com">zumunitech@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 ZumuniTech. All rights reserved.
+  </footer>
+</body>
+</html>
