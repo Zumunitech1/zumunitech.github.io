@@ -1,127 +1,153 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZumuniTech – Learn Network+, A+, AWS & Cybersecurity</title>
   <meta name="description" content="ZumuniTech helps beginners learn tech the smart way – from A+, Network+, AWS, to cybersecurity. Tutorials, videos & more." />
-  <meta name="keywords" content="Network+, A+, AWS, cybersecurity, tech tutorials, ZumuniTech, IT training" />
-  <meta name="author" content="ZumuniTech" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJQGHGTVW8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GJQGHGTVW8');
-  </script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLXQXMKJN8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZLXQXMKJN8');
-</script>
-
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #111;
-      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #222;
     }
+
     header {
-      background: #1a1a1a;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background: url('https://via.placeholder.com/1500x600') center/cover no-repeat;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
     }
+
     header h1 {
-      color: #00bcd4;
-      margin: 0;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
     }
-    nav a {
-      color: #fff;
-      margin-left: 2rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      background: #222;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      color: #00bcd4;
-    }
-    .hero p {
+
+    header p {
       font-size: 1.2rem;
-      max-width: 600px;
-      margin: 1rem auto;
+      margin-bottom: 1.5rem;
     }
-    .video-section, .blog-section, .services-section, .contact-section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
+
+    .hero-buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .hero-buttons a:hover {
+      background-color: #0056b3;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
       margin: auto;
-    }
-    .section-title {
-      font-size: 2rem;
-      color: #00bcd4;
-      margin-bottom: 1rem;
-    }
-    footer {
-      background: #1a1a1a;
       text-align: center;
-      padding: 1rem;
+    }
+
+    .section h2 {
+      margin-bottom: 1rem;
+      color: #007BFF;
+    }
+
+    .features, .courses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .feature-box, .course-box {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      flex: 1 1 250px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 40px 20px;
       font-size: 0.9rem;
     }
-    a.button {
-      display: inline-block;
-      background: #00bcd4;
-      color: #111;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
+
+    footer a {
+      color: #00bfff;
       text-decoration: none;
-      font-weight: bold;
-      margin-top: 1rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
+<body>
 
+  <!-- HERO -->
+  <header>
+    <h1>World-Class IT Training</h1>
+    <p>Learn Network+, A+, AWS & Cybersecurity the Smart Way – Anytime, Anywhere</p>
+    <div class="hero-buttons">
+      <a href="#courses">Explore Tutorials</a>
+      <a href="https://youtube.com/@ZumuniTech" target="_blank">Visit YouTube</a>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Learn Tech the Smart Way</h2>
-    <p>Welcome to ZumuniTech – where we simplify Network+, A+, AWS, and Cybersecurity for beginners. Subscribe, learn, and grow.</p>
-    <a href="https://www.youtube.com/@ZumuniTech" class="button" target="_blank">Visit YouTube Channel</a>
+  <!-- WHY TRAIN WITH ZUMUNITECH -->
+  <section class="section">
+    <h2>Why Learn with ZumuniTech?</h2>
+    <div class="features">
+      <div class="feature-box">📚 Beginner-Friendly</div>
+      <div class="feature-box">🎓 Self-Paced Learning</div>
+      <div class="feature-box">💻 Hands-On Practice</div>
+      <div class="feature-box">📺 Free Video Tutorials</div>
+      <div class="feature-box">🔐 Cybersecurity Basics</div>
+      <div class="feature-box">🌍 Remote/Online Access</div>
+    </div>
   </section>
 
- <section class="blog-section" id="blog">
-  <h3 class="section-title">Tech Lessons & Tutorials</h3>
-  <p>Post short blogs or share your AI-generated scripts and notes here.</p>
-  <ul>
-    <li>
-      <a href="networkplus-beginner-guide.html" style="color: #00ffff;">
-        What is CompTIA Network+? Beginner's Guide
-      </a>
-    </li>
-  </ul>
-</section>
-
-  <section class="contact-section" id="contact">
-    <h3 class="section-title">Get in Touch</h3>
-    <p>Email: <a href="mailto:hello@zumunitech.org">hello@zumunitech.org</a></p>
+  <!-- COURSE PREVIEWS -->
+  <section class="section" id="courses">
+    <h2>Top Learning Paths</h2>
+    <div class="courses">
+      <div class="course-box">CompTIA A+ Essentials</div>
+      <div class="course-box">Network+ Core Concepts</div>
+      <div class="course-box">AWS Cloud Foundations</div>
+      <div class="course-box">Cybersecurity for Beginners</div>
+    </div>
   </section>
 
+  <!-- CAREER PATH -->
+  <section class="section">
+    <h2>Launch Your Career Path</h2>
+    <div class="courses">
+      <div class="course-box">Support Engineer</div>
+      <div class="course-box">Network Administrator</div>
+      <div class="course-box">Cloud Technician</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 ZumuniTech. All rights reserved.</p>
+    <p>Email: <a href="mailto:hello@zumunitech.org">hello@zumunitech.org</a></p>
+    <p><a href="blog.html">Read Our Tech Blog</a> | <a href="https://github.com/zumunitech1/zumunitech.github.io">GitHub</a></p>
   </footer>
+
 </body>
 </html>
+
 
 
