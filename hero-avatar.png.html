@@ -2,6 +2,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  /* --- Top Blue Info Bar --- */
+.top-bar {
+  background-color: #3399ff;
+  color: white;
+  padding: 6px 20px;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.top-info span {
+  margin-right: 15px;
+}
+.top-info a, .top-social a {
+  color: white;
+  text-decoration: none;
+}
+.top-social a {
+  margin-left: 15px;
+}
+
+/* --- Main Header with Centered Logo --- */
+.main-header {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+}
+.logo img {
+  height: 40px;
+}
+.nav-menu a {
+  margin: 0 15px;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-menu a:hover {
+  color: #3399ff;
+}
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZumuniTech – Learn Network+ and A+</title>
@@ -14,6 +59,33 @@
     }
 
     body {
+      <!-- 📌 TOP INFO BAR -->
+<div class="top-bar">
+  <div class="top-info">
+    <span>Mon - Fri: 9:00 - 18:30</span>
+    <span>Email: <a href="mailto:hello@zumunitech.org">hello@zumunitech.org</a></span>
+    <span>Phone: +44 7930910505</span>
+  </div>
+  <div class="top-social">
+    <a href="https://www.youtube.com/@zumunitech" target="_blank">YouTube</a>
+    <a href="#">Twitter</a>
+    <a href="#">Instagram</a>
+  </div>
+</div>
+
+<!-- 📌 HEADER WITH LOGO AND NAV -->
+<header class="main-header">
+  <div class="logo">
+    <img src="images/zumunitech-logo.png" alt="ZumuniTech Logo">
+  </div>
+  <nav class="nav-menu">
+    <a href="#">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
       margin: 0;
       font-family: 'Segoe UI', 'Roboto', sans-serif;
       line-height: 1.6;
